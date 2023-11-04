@@ -1,0 +1,51 @@
+@font-face {
+  font-family: Clock;
+  src: url(digital-7.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #010001;
+}
+.time {
+  font-size: 80px;
+  color: #fffbfc;
+  font-family: Clock;
+  letter-spacing: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #010001;
+  padding: 20px 0;
+  color: #fffbfc;
+  display: block;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .time {
+    font-size: 50px;
+  }
+}
